@@ -3,10 +3,59 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Universidad UNMSM"
-        android:id="@+id/textView3"
-        android:layout_gravity="center_horizontal" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/logoSanMarcos"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logounmsm"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="año de fundacion"
+                android:id="@+id/fundaciontv"
+                android:layout_marginBottom="16dp"
+                android:textAllCaps="true"
+                android:textSize="24sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="reseña historica"
+                android:id="@+id/resenhatv"
+                android:layout_marginBottom="16dp"
+                android:textAllCaps="true"
+                android:textSize="24sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="autoridades destacadas"
+                android:id="@+id/autoridadestv"
+                android:layout_marginBottom="16dp"
+                android:textAllCaps="true"
+                android:textSize="24sp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
